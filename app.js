@@ -17,11 +17,9 @@ const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
+const flowDocs = addKeyword(['1', 'uno', '01']).addAnswer(
     [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
-        '\n*2* Para siguiente paso.',
+        '¡Gracias por interesarte en nuestros programas de intercambio en el extranjero! 🌎 Indícanos tu nombre para continuar:',
     ],
     null,
     null,
@@ -60,13 +58,12 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
 )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+    .addAnswer('🙌 ¡Bienvenido a *Enroll Recruitment*! Soy Roy 🐶 tu asistente virtual, es un gusto atender tus consultas; antes de continuar y para darte una mejor atención, te pediremos brevemente algunos datos 🙌')
     .addAnswer(
         [
-            'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
+            '¿Cómo podemos ayudarte hoy?',
+            '👉*1* 🌎 Información sobre los programas de intercambio.',
+            '👉*2* ❔ Necesito hablar con un asesor.',
         ],
         null,
         null,
